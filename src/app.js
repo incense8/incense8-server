@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(helmet());
 
 mongoose
-	.connect(process.env.DB)
+	.connect(process.env.DB_URL)
 	.then(() => {
 		console.log('successful connected to mongoose deb');
 	})
